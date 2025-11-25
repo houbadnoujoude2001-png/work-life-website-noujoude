@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Daily Message</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <!-- Navigation bar -->
+  <div class="nav">
+    <a href="homepage.html">Home</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="dailyMessage.html">Daily Message</a>
+    <a href="gallery.html">Image Gallery</a>
+    <a href="registration.html">Registration</a>
+  </div>
+  <h1>Message of the Day</h1>
+
+  <!-- Dynamic message -->
+  <p id="message"></p>
+
+  <script>
+    const messages = {
+      Monday: "Be ready — a fresh new week is starting!",
+      Tuesday: "Get prepared for your Zoom course!",
+      Wednesday: "Another Zoom course — stay focused!",
+      Thursday: "University Day — do your best!",
+      Friday: "Cooking and cleaning day!",
+      Saturday: "Go out and enjoy your Saturday!",
+      Sunday: "Relax and enjoy your Sunday!"
+    };
+
+    const today = new Date().toLocaleDateString("en-AU", { weekday: "long" });
+    document.getElementById("message").textContent = messages[today];
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+      
+
+
+
+
